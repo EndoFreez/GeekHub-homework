@@ -6,3 +6,4 @@ if sum_of_first_positive >= 1:
 	print(sum_of_first_positive * (sum_of_first_positive + 1) / 2)
 else:
 	print(None)
+	

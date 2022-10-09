@@ -3,7 +3,6 @@
 
 sum_of = int(input("Number: "))
 if sum_of >= 1:
-	print(int(sum_of * (sum_of + 1) / 2))
+	print(sum(range(sum_of + 1)))
 else:
 	print(None)
-	

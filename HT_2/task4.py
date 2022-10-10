@@ -2,7 +2,8 @@
 # times asks user for string input. At the end script must print out 
 # result of concatenating all <number> strings.
 
+result = ""
 num_times = int(input("Times: "))
-for con_g in range(num_times):
-	some_string = num_times*(input("Text: "))
-print(some_string)
+for i in range(num_times):
+	result += input("Text: ")
+print(result)

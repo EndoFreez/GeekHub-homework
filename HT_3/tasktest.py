@@ -3,10 +3,8 @@
 # The "replacement" value is entered by user. The number of elements in
 # the tuples must be different.
 
-tuples_list = [
-	("1", 2, True, "kaka", ),
+tuples_list = [("1", 2, True, "kaka", ),
 	("tuple", 13, 'list', 4, "2333", "kik", ),
-	(1, 2, 3, "16", False, ), ()
-]
-change_for = input("Replace: ")
-print([x[:-1] + (change_for,) if len(x) != 0 else () for x in tuples_list])
+	(1, 2, 3, "16", False, )]
+changer = input("Something: ")
+print([i[:-1] + (changer,) for i in tuples_list])

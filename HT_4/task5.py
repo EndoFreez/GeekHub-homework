@@ -17,8 +17,12 @@ def calc(a, b, c):
 			return print("Неможлива операція")
 		return print(a / c)
 	if b == "%":
+		if c == 0:
+			return print("Неможлива операція")
 		return print(a % c)
 	if b == "//":
+		if c == 0:
+			return print("Неможлива операція")
 		return print(a // c)
 	if b == "**":
 		return print(a ** c)

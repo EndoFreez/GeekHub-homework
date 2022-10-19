@@ -6,26 +6,23 @@
 # значеннями на предмет помилок!
 
 def calc(a, b, c):
-	if b == "+":
-		return print(a + c)
-	if b == "-":
-		return print(a - c)
-	if b == "*":
-		return print(a * c)
-	if b == "/":
-		if c == 0:
-			return print("Неможлива операція")
-		return print(a / c)
-	if b == "%":
-		if c == 0:
-			return print("Неможлива операція")
-		return print(a % c)
-	if b == "//":
-		if c == 0:
-			return print("Неможлива операція")
-		return print(a // c)
-	if b == "**":
-		return print(a ** c)
+	try:
+		if b == "+":
+			return print(a + c)
+		if b == "-":
+			return print(a - c)
+		if b == "*":
+			return print(a * c)
+		if b == "/":
+			return print(a / c)
+		if b == "%":
+			return print(a % c)
+		if b == "//":
+			return print(a // c)
+		if b == "**":
+			return print(a ** c)
+	except ZeroDivisionError:
+		return print("з 0 не спрацює")
 	else:
 		return print("Не підримуєма операція!")
 

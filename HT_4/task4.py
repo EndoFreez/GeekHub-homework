@@ -31,6 +31,7 @@ def format_string(some_crazy_string):
 				letter_str += i
 		print("Сума цифер у рядку:", sum_of_num)
 		print("Лише літери:", letter_str)
+
 format_string(a)
 format_string(b)
 format_string(c)

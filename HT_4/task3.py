@@ -17,6 +17,7 @@ def some_math(x, y):
 	elif x > y:
 		z = x - y
 		print("x більше ніж у на",z)
+
 x = int(input("x = "))
 y = int(input("y = "))
 some_math(x, y)

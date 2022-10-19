@@ -30,5 +30,6 @@ def sq_vs_fact():
 		else:
 			print("oooops")
 	return comparison_of(a, b)
+
 sq_vs_fact()
 

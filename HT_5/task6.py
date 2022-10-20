@@ -7,11 +7,11 @@
 #  fnc([1, 2, 3, 4, 5], shift=-2) --> [3, 4, 5, 1, 2]
 
 
-def landslide(shift):
-	lded = list1[-shift:] + list1[:-shift]
+def landslide(some_list, shift):
+	lded = some_list[-shift:] + some_list[:-shift]
 	return lded
 
 list1 = [1, 2, 3, 4, 5]
-a = int(input(":"))
-print(landslide(a))
+shift = int(input(":"))
+print(landslide(list1, shift))
 

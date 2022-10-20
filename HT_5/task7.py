@@ -10,10 +10,10 @@ from collections import Counter
 list1 = [1, 1, 'foo', [1, 2], True, 'foo', 1, [1, 2]]
 
 
-def count_el(list1):
-	str1 = Counter(map(str, list1))
+def count_el(test_list) -> str:
+	str1 = list(map(str,list1))
+	count = dict(Counter(str1))
+	res = ', '
+	print(res.join(f"{a} -> {b}" for a, b in count.items()))
 
-	return str1
-
-
-print(count_el(list1))
+count_el(list1)

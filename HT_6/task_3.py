@@ -17,19 +17,19 @@
 class LoginException(Exception):
     pass
 
-def check_num(password):
-    for i in password:
-        if i.isdigit():
-            return True
-    return False
-
-def check_capital(password):
-    for i in password:
-        if i.isupper():
-            return True
-    return False
-
 def login_pass(username, password):
+    
+    def check_num(password):
+        for i in password:
+            if i.isdigit():
+                return True
+        return False
+
+    def check_capital(password):
+        for i in password:
+            if i.isupper():
+                return True
+        return False
     if 3 >= len(username) < 50:
         raise LoginException(">3<50")
     if len(password) < 8:
@@ -40,15 +40,15 @@ def login_pass(username, password):
         return print("Хух, ви це зробили, вітаю!!!")
 
 data = [("Pavelito", "Grenkilublu111"), ("kolyamba", "anarhist777"),
-	("Geekhub", "karrrammmbaaa"), ("kot", "kiskismyamya3000"),
-	("kolombo", "shishkorvach")]
+    ("Geekhub", "karrrammmbaaa"), ("kot", "kiskismyamya3000"),
+    ("kolombo", "shishkorvach")]
 
 for i in data:
-	try:
-		print("Username:", i[0])
-		print("Password:", i[1])
-		login_pass(i[0], i[1])
-	except LoginException as error:
-		print(f"Something wrong: {error}")
-	print("-----------")
+    try:
+        print("Username:", i[0])
+        print("Password:", i[1])
+        login_pass(i[0], i[1])
+    except LoginException as error:
+        print(f"Something wrong: {error}")
+    print("-----------")
 

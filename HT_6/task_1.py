@@ -19,14 +19,14 @@ def lpvalidator(username, password, silent = False):
 	("kolombo", "shishkorvach")]
 	if (username, password) in data:
 		return True
-	elif (username, password) not in data:
+	else:
 		if silent == True:
 			return False
 		elif silent == False:
 			return LoginException("Something wrong!!!")
 
-print(lpvalidator("kolyamba", "anarhist777"))
-print(lpvalidator("kolombo", "shishkorvach"))
+print(lpvalidator("kolyamba", "anarhist777", False))
+print(lpvalidator("kolombo", "shishkorvach", True))
 print(lpvalidator("pavel", "grenkilublu", True))
 print(lpvalidator("kotolub", "shishkorvach", True))
 print(lpvalidator("petia", "buhanka"))

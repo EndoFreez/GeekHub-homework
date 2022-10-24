@@ -6,12 +6,11 @@
 #  fnc([1, 2, 3, 4, 5], shift=1) --> [5, 1, 2, 3, 4]
 #  fnc([1, 2, 3, 4, 5], shift=-2) --> [3, 4, 5, 1, 2]
 
-
 def landslide(some_list, shift):
 	lded = some_list[-shift:] + some_list[:-shift]
 	return lded
 
 list1 = [1, 2, 3, 4, 5]
-shift = int(input(":"))
+shift = int(input("Shift: "))
 print(landslide(list1, shift))
 

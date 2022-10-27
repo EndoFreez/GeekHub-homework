@@ -20,10 +20,7 @@ def lpvalidator(username, password, silent = False):
 	if (username, password) in data:
 		return True
 	else:
-		if silent:
-			return False
-		else:
-			return LoginException("Something wrong!!!")
+		return LoginException("Something wrong!!!")
 
 print(lpvalidator("kolyamba", "anarhist777", False))
 print(lpvalidator("kolombo", "shishkorvach", True))

@@ -14,7 +14,7 @@
 # тощо). Подивіться як веде себе стандартний range в таких випадках.
 
 
-def my_range(start = 0, stop = None, step = 1):
+def my_range(start, stop = None, step = 1):
     if step == 0:
         raise ValueError
     if stop == None:
